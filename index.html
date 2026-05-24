@@ -19,10 +19,12 @@
     <div class="form-container">
       <form>
         <input type="text" 
+        id="userInput"
         class="topic-input"
         placeholder="Enter a topic for a joke..." 
         autocomplete="off"
         autoFocus
+           required
         />
         
 
@@ -30,8 +32,8 @@
         <button type="submit">Generate Joke</button>
       </form>
     </div>
-    <div class="joke-container" id="joke">
-      Joke will be here
+    <div class="joke-container hidden" id="joke">
+     
     </div>
     </main>
     <footer>

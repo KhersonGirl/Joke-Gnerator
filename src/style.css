@@ -61,6 +61,9 @@ button:hover {
     border-radius: 10px;
     font-size: 18px;
 }
+.hidden {
+    display: none;
+}
 
 footer {
     display: block;
@@ -70,4 +73,18 @@ footer {
     color: #333;
 }
 
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
 
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+
+}
